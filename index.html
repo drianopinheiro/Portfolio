@@ -1,0 +1,1048 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de Adriano Pinheiro dos Santos — Estudante de Desenvolvimento de Sistemas na ETEC. HTML, CSS, JavaScript, Python.">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-icons-font@v16/font/simple-icons.min.css">
+
+    <title>Adriano Pinheiro | Dev</title>
+</head>
+
+<body>
+
+    <!-- ==================== HEADER / NAV ==================== -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#home" class="nav__logo">
+                <span class="nav__logo-ap">AP</span>
+                <span class="nav__logo-text">Adriano Pinheiro</span>
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <svg class="nav__icon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+                            </svg>
+                            <span>Home</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">
+                            <svg class="nav__icon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                <path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/>
+                            </svg>
+                            <span>Sobre</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <svg class="nav__icon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/>
+                            </svg>
+                            <span>Habilidades</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#portfolio" class="nav__link">
+                            <svg class="nav__icon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                <path d="M20 6h-2.18c.07-.44.18-.88.18-1.33C18 2.1 15.9 0 13.33 0c-1.33 0-2.6.52-3.54 1.46L8 3.21 6.21 1.46C5.27.52 4 0 2.67 0 1.1 0 0 1.1 0 2.67 0 3.12.11 3.56.18 4H2C.9 4 0 4.9 0 6v14c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zM13.33 2c.74 0 1.33.6 1.33 1.33 0 .74-.6 1.34-1.33 1.34-.74 0-1.33-.6-1.33-1.34 0-.73.59-1.33 1.33-1.33zm-9.99 0h.33c.74 0 1.33.6 1.33 1.33 0 .74-.6 1.34-1.33 1.34h-.33C2.6 4.67 2 4.07 2 3.33 2 2.6 2.6 2 3.34 2zM20 20H2v-2h18v2zm0-5H2V8h5.08L5 10.08 6.62 12 9 9.62 11.38 12 13 10.38l-2.08-2.08H9l-1-1H2.08c.14-.64.3-1.33.42-2H20v8z"/>
+                            </svg>
+                            <span>Projetos</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#qualification" class="nav__link">
+                            <svg class="nav__icon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                <path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/>
+                            </svg>
+                            <span>Formação</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <svg class="nav__icon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                            </svg>
+                            <span>Contato</span>
+                        </a>
+                    </li>
+
+                </ul>
+
+                <!-- Close button (mobile) -->
+                <button class="nav__close" id="nav-close" type="button" aria-label="Fechar menu">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" aria-hidden="true">
+                        <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="nav__btns">
+                <!-- Theme toggle -->
+                <button class="change-theme" id="theme-button" type="button" aria-label="Ativar tema claro">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" aria-hidden="true">
+                        <path d="M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69zm-2 5.79V18h-3.52L12 20.48 9.52 18H6v-3.52L3.52 12 6 9.52V6h3.52L12 3.52 14.48 6H18v3.52L20.48 12 18 14.48zM12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5z"/>
+                    </svg>
+                </button>
+
+                <!-- Menu toggle (mobile) -->
+                <button class="nav__toggle" id="nav-toggle" type="button" aria-label="Abrir menu">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" aria-hidden="true">
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+
+    <main class="main">
+
+        <!-- ==================== HOME ==================== -->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__content grid">
+
+                    <!-- Social Links -->
+                    <div class="home__social">
+                        <a href="https://www.linkedin.com/in/adriano-pinheiro-726251442" class="home__social-icon" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+                            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                                <path d="M19 0H5a5 5 0 00-5 5v14a5 5 0 005 5h14a5 5 0 005-5V5a5 5 0 00-5-5zM8 19H5V8h3v11zM6.5 6.73a1.77 1.77 0 110-3.54 1.77 1.77 0 010 3.54zM20 19h-3v-5.6c0-3.37-4-3.11-4 0V19h-3V8h3v1.77C14.4 7.47 20 7.3 20 12.68V19z"/>
+                            </svg>
+                        </a>
+
+                        <a href="https://github.com/drianopinheiro" class="home__social-icon" target="_blank" rel="noopener noreferrer" title="GitHub">
+                            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                                <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+                            </svg>
+                        </a>
+
+                        <a href="https://www.instagram.com/driano.py?exln=MXc3Nm9nd3FiZXE0Mw==" class="home__social-icon" target="_blank" rel="noopener noreferrer" title="Instagram">
+                            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <!-- Profile Photo with Blob -->
+                    <div class="home__img">
+                        <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <defs>
+                                <linearGradient id="blobGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#7C3AED;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#3B82F6;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <mask id="mask0" mask-type="alpha">
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+                            </mask>
+                            <g mask="url(#mask0)">
+                                <path fill="url(#blobGradient)" d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+                                <image class="home__blob-img" x="1" y="-10" width="200" href="assets/img/perfil.png" alt="Adriano Pinheiro" />
+                            </g>
+                        </svg>
+                    </div>
+
+                    <!-- Hero Text -->
+                    <div class="home__data">
+                        <div class="home__available-badge">
+                            <span class="home__available-dot"></span>
+                            Disponível para oportunidades
+                        </div>
+                        <span class="home__subtitle">Estudante de Desenvolvimento de Sistemas</span>
+                        <h1 class="home__title">Olá, Eu sou <br><span class="home__title-gradient">Adriano</span></h1>
+                        <p class="home__description">
+                            Estou no início de uma jornada apaixonante na programação, cursando o Técnico em
+                            Desenvolvimento de Sistemas na ETEC. Cada linha de código é um passo em direção ao meu
+                            objetivo de transformar ideias em soluções digitais.
+                        </p>
+                        <div class="home__buttons">
+                            <a href="#portfolio" class="button button--gradient">
+                                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M19 13H5v-2h14v2z"/><path d="M12 19l7-7-7-7v14z"/></svg>
+                                Ver Projetos
+                            </a>
+                            <a download href="assets/pdf/Adriano-Pinheiro-Cv.pdf" class="button button--outline" target="_blank" rel="noopener noreferrer">
+                                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+                                Download CV
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Scroll indicator -->
+            <a href="#about" class="home__scroll">
+                <div class="home__scroll-box">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                        <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
+                    </svg>
+                </div>
+            </a>
+        </section>
+
+
+        <!-- ==================== ABOUT ==================== -->
+        <section class="about section" id="about">
+            <h2 class="section__title">Sobre mim</h2>
+            <span class="section__subtitle">Minha história</span>
+
+            <div class="about__container container grid">
+                <img src="assets/img/about.jpeg" alt="Adriano Pinheiro — Estudante ETEC" class="about__img">
+
+                <div class="about__data">
+                    <p class="about__description">
+                        Sou Adriano Pinheiro dos Santos, morador de Mauá – SP, apaixonado por tecnologia e
+                        desenvolvimento de software. Atualmente curso o <strong>Técnico em Desenvolvimento de
+                        Sistemas</strong> na ETEC (Centro Paula Souza), onde estou no 1º módulo de três.
+                        <br><br>
+                        Minha jornada começou com HTML e CSS, e hoje já estou explorando JavaScript e Python,
+                        construindo projetos práticos para solidificar cada aprendizado. Acredito que a consistência
+                        diária é o caminho para me tornar um desenvolvedor completo.
+                    </p>
+
+                    <div class="about__info">
+                        <div class="about__info-item">
+                            <span class="about__info-title">1º Módulo</span>
+                            <span class="about__info-name">Cursando</span>
+                        </div>
+                        <div class="about__info-item">
+                            <span class="about__info-title">ETEC</span>
+                            <span class="about__info-name">Centro Paula Souza</span>
+                        </div>
+                        <div class="about__info-item">
+                            <span class="about__info-title">Mauá</span>
+                            <span class="about__info-name">São Paulo – BR</span>
+                        </div>
+                    </div>
+
+                    <div class="about__buttons">
+                        <a download href="assets/pdf/Adriano-Pinheiro-Cv.pdf" class="button button--gradient" target="_blank" rel="noopener noreferrer">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+                            Download CV
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ==================== SKILLS ==================== -->
+        <section class="skills section" id="skills">
+            <h2 class="section__title">Habilidades</h2>
+            <span class="section__subtitle">Meu nível técnico atual</span>
+
+            <div class="skills__container container grid">
+
+                <!-- Desenvolvimento Web -->
+                <div class="skills__content skills__close">
+                    <div class="skills__header" role="button" tabindex="0" aria-expanded="false">
+                        <svg class="skills__icon" viewBox="0 0 24 24" width="40" height="40" fill="currentColor">
+                            <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/>
+                        </svg>
+                        <div>
+                            <h2 class="skills__title">Desenvolvimento Web</h2>
+                            <span class="skills__subtitle">HTML · CSS · JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- skill -->
+                <div class="skills__content skills__close">
+                    <div class="skills__header" role="button" tabindex="0" aria-expanded="false">
+                        <svg class="skills__icon" viewBox="0 0 24 24" width="40" height="40" fill="currentColor">
+                            <path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/>
+                        </svg>
+                        <div>
+                            <h2 class="skills__title">Programação</h2>
+                            <span class="skills__subtitle">Python · Node Js · SQL · Git · GitHub</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Design -->
+                <div class="skills__content skills__close">
+                    <div class="skills__header" role="button" tabindex="0" aria-expanded="false">
+                        <svg class="skills__icon" viewBox="0 0 24 24" width="40" height="40" fill="currentColor">
+                            <path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9c.83 0 1.5-.67 1.5-1.5 0-.39-.15-.74-.39-1.01-.23-.26-.38-.61-.38-.99 0-.83.67-1.5 1.5-1.5H16c2.76 0 5-2.24 5-5 0-4.42-4.03-8-9-8zm-5.5 9c-.83 0-1.5-.67-1.5-1.5S5.67 9 6.5 9 8 9.67 8 10.5 7.33 12 6.5 12zm3-4C8.67 8 8 7.33 8 6.5S8.67 5 9.5 5s1.5.67 1.5 1.5S10.33 8 9.5 8zm5 0c-.83 0-1.5-.67-1.5-1.5S13.67 5 14.5 5s1.5.67 1.5 1.5S15.33 8 14.5 8zm3 4c-.83 0-1.5-.67-1.5-1.5S16.67 9 17.5 9s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/>
+                        </svg>
+                        <div>
+                            <h2 class="skills__title">Design & Ferramentas</h2>
+                            <span class="skills__subtitle">Figma · Canva</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="skills__carousel swiper-container container" aria-label="Tecnologias e ferramentas">
+                <div class="swiper-wrapper">
+                    <div class="skills__slide swiper-slide">
+                        <i class="devicon-html5-plain colored"></i>
+                        <h3>HTML5</h3>
+                    </div>
+                    <div class="skills__slide swiper-slide">
+                        <i class="devicon-css3-plain colored"></i>
+                        <h3>CSS3</h3>
+                    </div>
+                     <div class="skills__slide swiper-slide">
+                        <i class="devicon-bootstrap-plain colored"></i>
+                        <h3>Bootstrap</h3>
+                    </div>
+                     <div class="skills__slide swiper-slide">
+                        <i class="devicon-bulma-plain colored"></i>
+                        <h3>Bulma</h3>
+                    </div>
+                    <div class="skills__slide swiper-slide">
+                        <i class="devicon-javascript-plain colored"></i>
+                        <h3>JavaScript</h3>
+                    </div>
+                    <div class="skills__slide swiper-slide">
+                        <i class="devicon-react-original colored"></i>
+                        <h3>React</h3>
+                    </div>
+                    <div class="skills__slide swiper-slide">
+                        <i class="devicon-python-plain colored"></i>
+                        <h3>Python</h3>
+                    </div>
+                    <div class="skills__slide swiper-slide">
+                        <i class="devicon-nodejs-plain colored"></i>
+                        <h3>Node.js</h3>
+                    </div>
+                    <div class="skills__slide swiper-slide">
+                       <i class="devicon-linux-plain colored"></i>
+                        <h3>Linux</h3>
+                    </div>
+                    <div class="skills__slide swiper-slide">
+                        <i class="devicon-windows11-original colored"></i>
+                        <h3>Windows 11</h3>
+                    </div>
+                    <div class="skills__slide swiper-slide">
+                        <i class="devicon-mysql-original colored"></i>
+                        <h3>SQL (MySQL)</h3>
+                    </div>
+                    <div class="skills__slide swiper-slide">
+                        <i class="devicon-mongodb-plain colored"></i>
+                        <h3>NoSQL</h3>
+                    </div>
+                    <div class="skills__slide swiper-slide">
+                        <i class="devicon-git-plain colored"></i>
+                        <h3>Git</h3>
+                    </div>
+                    <div class="skills__slide swiper-slide">
+                        <i class="devicon-github-original"></i>
+                        <h3>GitHub</h3>
+                    </div>
+                   
+                    <div class="skills__slide swiper-slide">
+                        <i class="devicon-figma-plain colored"></i>
+                        <h3>Figma</h3>
+                    </div>
+                    <div class="skills__slide swiper-slide">
+                        <img src="assets/img/ia/canva.svg" alt="Canva" style="width: 60px; height: 60px; object-fit: contain;">
+                        <h3>Canva</h3>
+                    </div>
+                    <div class="skills__slide swiper-slide">
+                        <i class="devicon-vscode-plain colored"></i>
+                        <h3>VSCode</h3>
+                    </div>
+                    <div class="skills__slide swiper-slide">
+                        <img src="assets/img/ia/antigravity-color.svg" alt="Antigravity" style="width: 60px; height: 60px; object-fit: contain;">
+                        <h3>Antigravity</h3>
+                    </div>
+                </div>
+                <button class="skills__swiper-button skills__swiper-button--prev" type="button" aria-label="Tecnologia anterior">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+                </button>
+                <button class="skills__swiper-button skills__swiper-button--next" type="button" aria-label="Próxima tecnologia">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M8.59 16.59 10 18l6-6-6-6-1.41 1.41L13.17 12z"/></svg>
+                </button>
+                <div class="skills__pagination swiper-pagination" aria-label="Posição no carrossel"></div>
+            </div>
+        </section>
+
+        <!-- ==================== carrossel ==================== -->
+
+<section class="ai-section" id="inteligencias-artificiais">
+
+  <div class="ai-header">
+    <span class="ai-tag">TECNOLOGIA & INOVAÇÃO</span>
+
+    <h2>
+      Inteligências <span>Artificiais</span>
+    </h2>
+
+    <p>
+      Ferramentas de inteligência artificial que utilizo
+      para aprender, desenvolver projetos e aumentar minha produtividade.
+    </p>
+  </div>
+
+  <div class="ai-carousel">
+    <div class="ai-track">
+
+      <article class="ai-card">
+        <div class="ai-logo">
+          <img src="assets/img/ia/openai.svg" alt="ChatGPT">
+        </div>
+        <h3>ChatGPT</h3>
+        <p>Ideias, estudos e auxílio na programação.</p>
+        <small>IA GENERATIVA</small>
+      </article>
+
+      <article class="ai-card">
+        <div class="ai-logo">
+          <img src="assets/img/ia/gemini-color.svg" alt="Gemini">
+        </div> <i class="si si-googlegemini"></i>
+        <h3>Gemini</h3>
+        <p>Pesquisa, produtividade e resolução de problemas.</p>
+        <small>IA GOOGLE</small>
+      </article>
+
+      <article class="ai-card">
+        <div class="ai-logo">
+          <img src="assets/img/ia/grok.svg" alt="Grok">
+        </div>
+        <h3>Grok</h3>
+        <p>Exploração de ideias e tarefas inteligentes.</p>
+        <small>IA GENERATIVA</small>
+      </article>
+
+      <article class="ai-card">
+        <div class="ai-logo">
+           <img src="assets/img/ia/githubcopilot.svg" alt="GitHub Copilot">
+        </div>
+        <h3>GitHub Copilot</h3>
+        <p>Assistência na escrita e desenvolvimento de código.</p>
+        <small>PROGRAMAÇÃO</small>
+      </article>
+
+      <article class="ai-card">
+        <div class="ai-logo">
+          <img src="assets/img/ia/claude-color.svg" alt="Claude">
+        </div>
+        <h3>Claude</h3>
+        <p>Análise, escrita e desenvolvimento de projetos.</p>
+        <small>IA GENERATIVA</small>
+      </article>
+
+      <article class="ai-card">
+        <div class="ai-logo">
+          <img src="https://cdn.simpleicons.org/deepseek/ffffff" alt="DeepSeek">
+        </div>
+        <h3>DeepSeek</h3>
+        <p>Raciocínio, programação e desafios.</p>
+        <small>IA GENERATIVA</small>
+      </article>
+
+      <article class="ai-card">
+        <div class="ai-logo">
+          <img src="https://cdn.simpleicons.org/meta/ffffff" alt="Meta AI">
+        </div>
+        <h3>Meta AI</h3>
+        <p>Criatividade e produtividade.</p>
+        <small>IA GENERATIVA</small>
+      </article>
+
+    </div>
+  </div>
+
+  <div class="ai-footer">
+    <span class="ai-dot"></span>
+    EXPLORANDO NOVAS TECNOLOGIAS
+  </div>
+
+</section>
+
+        <!-- ==================== PORTFOLIO ==================== -->
+        <section class="portfolio section" id="portfolio">
+            <h2 class="section__title">Projetos</h2>
+            <span class="section__subtitle">Trabalhos recentes</span>
+
+            <div class="portfolio__container container swiper-container">
+                <div class="swiper-wrapper">
+
+                    <!-- Slide 1: Netflix Clone -->
+                    <div class="swiper-slide">
+                        <div class="portfolio__content grid">
+                            <img src="assets/img/portfolio1.png" alt="Login Netflix Clone" class="portfolio__img">
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Login Netflix Clone</h3>
+                                <p class="portfolio__description">
+                                    Réplica da tela de login da Netflix com autenticação simulada,
+                                    responsividade e estilização fiel ao original.
+                                </p>
+                                <div class="portfolio__tags">
+                                    <span class="tech__tag tech__tag--sm">HTML</span>
+                                    <span class="tech__tag tech__tag--sm">CSS</span>
+                                    <span class="tech__tag tech__tag--sm">JavaScript</span>
+                                </div>
+                                <a href="https://github.com/drianopinheiro/Login-Netflix" target="_blank" rel="noopener noreferrer" class="button button--sm button--outline">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                                    Ver no GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2: Jogo da Velha -->
+                    <div class="swiper-slide">
+                        <div class="portfolio__content grid">
+                            <img src="assets/img/portfolio2.png" alt="Jogo da Velha" class="portfolio__img">
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Jogo da Velha</h3>
+                                <p class="portfolio__description">
+                                    Implementação do clássico Jogo da Velha com lógica de vitória,
+                                    detecção de empate e interface interativa.
+                                </p>
+                                <div class="portfolio__tags">
+                                    <span class="tech__tag tech__tag--sm">HTML</span>
+                                    <span class="tech__tag tech__tag--sm">CSS</span>
+                                    <span class="tech__tag tech__tag--sm">JavaScript</span>
+                                </div>
+                                <a href="https://github.com/drianopinheiro/Jogo-da-Velha" target="_blank" rel="noopener noreferrer" class="button button--sm button--outline">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                                    Ver no GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3: Cronômetro -->
+                    <div class="swiper-slide">
+                        <div class="portfolio__content grid">
+                            <img src="assets/img/portfolio3.png" alt="Cronômetro Responsivo" class="portfolio__img">
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Cronômetro Responsivo</h3>
+                                <p class="portfolio__description">
+                                    Cronômetro digital com funções de iniciar, pausar, continuar e zerar,
+                                    com design responsivo e moderno.
+                                </p>
+                                <div class="portfolio__tags">
+                                    <span class="tech__tag tech__tag--sm">HTML</span>
+                                    <span class="tech__tag tech__tag--sm">CSS</span>
+                                    <span class="tech__tag tech__tag--sm">JavaScript</span>
+                                </div>
+                                <a href="https://github.com/drianopinheiro/Cronometro-responsivo" target="_blank" rel="noopener noreferrer" class="button button--sm button--outline">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                                    Ver no GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 4: Portal de Entretenimento -->
+                    <div class="swiper-slide">
+                        <div class="portfolio__content grid">
+                            <img src="assets/img/portfolio4.jpg" alt="Sites Favoritos" class="portfolio__img">
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">GitHub</h3>
+                                <p class="portfolio__description">
+                                    Conheça meu perfil no GitHub e acompanhe meus projetos, códigos e minha evolução como desenvolvedor!
+                                </p>
+                                <div class="portfolio__tags">
+                                    <span class="tech__tag tech__tag--sm">ETEC</span>
+                                </div>
+                                <a href="https://github.com/drianopinheiro" target="_blank" rel="noopener noreferrer" class="button button--sm button--outline">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                                    Ver no GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Swiper Navigation -->
+                <button class="swiper-button-next" type="button" aria-label="Próximo projeto">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M8.59 16.59 10 18l6-6-6-6-1.41 1.41L13.17 12z"/></svg>
+                </button>
+                <button class="swiper-button-prev" type="button" aria-label="Projeto anterior">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+                </button>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+
+        <!-- ==================== QUALIFICATION ==================== -->
+        <section class="qualification section" id="qualification">
+            <h2 class="section__title">Formação</h2>
+            <span class="section__subtitle">Minha trajetória acadêmica</span>
+
+            <div class="qualification__container container">
+                <!-- Tabs -->
+                <div class="qualification__tabs">
+                    <button class="qualification__button qualification__active button--flex" type="button" data-target="#education" aria-controls="education" aria-selected="true">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/></svg>
+                        Educação
+                    </button>
+                    <button class="qualification__button button--flex" type="button" data-target="#journey" aria-controls="journey" aria-selected="false">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M13 2.05v2.02c3.95.49 7 3.85 7 7.93 0 3.21-1.81 6-4.72 7.72L13 18v5h5l-1.22-1.22C19.91 19.07 22 15.76 22 12c0-5.18-3.95-9.45-9-9.95zM11 2.05C5.95 2.55 2 6.82 2 12c0 3.76 2.09 7.07 5.22 8.78L6 22h5v-5l-2.28 1.72C6.81 17.6 5 14.81 5 12c0-4.08 3.05-7.44 7-7.93V2.05z"/></svg>
+                        Jornada
+                    </button>
+                </div>
+
+                <div class="qualification__sections">
+
+                    <!-- Education -->
+                    <div class="qualification__content qualification__active" data-content id="education">
+
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">Técnico em Des. de Sistemas</h3>
+                                <span class="qualification__subtitle">ETEC — Centro Paula Souza</span>
+                                <div class="qualification__calendar">
+                                    <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11z"/></svg>
+                                    2026— Cursando (1º Módulo)
+                                </div>
+                            </div>
+                            <div class="qualification__rounder-line">
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+
+                        <div class="qualification__data qualification__data--reverse">
+                            <div class="qualification__rounder-line">
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                            <div>
+                                <h3 class="qualification__title">Full Stack JavaScript</h3>
+                                <span class="qualification__subtitle">One Bit Code</span>
+                                <div class="qualification__calendar">
+                                    <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11z"/></svg>
+                                    2025 — Concluído
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">Desenvolvimento Web</h3>
+                                <span class="qualification__subtitle">Fundação Bradesco — 127h</span>
+                                <div class="qualification__calendar">
+                                    <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11z"/></svg>
+                                    2024 — Concluído
+                                </div>
+                            </div>
+                            <div class="qualification__rounder-line">
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+
+                        <div class="qualification__data qualification__data--reverse">
+                            <div class="qualification__rounder-line">
+                                <span class="qualification__rounder"></span>
+                            </div>
+                            <div>
+                                <h3 class="qualification__title">Desenvolvimento de Sistemas</h3>
+                                <span class="qualification__subtitle">Fundação Bradesco — 128h</span>
+                                <div class="qualification__calendar">
+                                    <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11z"/></svg>
+                                    2024 — Concluído
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Journey -->
+                    <div class="qualification__content" data-content id="journey">
+
+    <div class="qualification__data">
+        <div>
+            <h3 class="qualification__title">Primeiros Projetos</h3>
+            <span class="qualification__subtitle">Netflix Clone, Jogo da Velha, Cronômetro</span>
+            <div class="qualification__calendar">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11z"/></svg>
+                2026
+            </div>
+        </div>
+        <div class="qualification__rounder-line">
+            <span class="qualification__rounder"></span>
+            <span class="qualification__line"></span>
+        </div>
+    </div>
+
+    <div class="qualification__data qualification__data--reverse">
+        <div class="qualification__rounder-line">
+            <span class="qualification__rounder"></span>
+            <span class="qualification__line"></span>
+        </div>
+        <div>
+            <h3 class="qualification__title">Ingresso na ETEC</h3>
+            <span class="qualification__subtitle">Técnico em Des. de Sistemas</span>
+            <div class="qualification__calendar">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11z"/></svg>
+                2026
+            </div>
+        </div>
+    </div>
+
+    <div class="qualification__data">
+        <div>
+            <h3 class="qualification__title">Cursos Fundação Bradesco</h3>
+            <span class="qualification__subtitle">255h de formação em TI</span>
+            <div class="qualification__calendar">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11z"/></svg>
+                2024
+            </div>
+        </div>
+        <div class="qualification__rounder-line">
+            <span class="qualification__rounder"></span>
+            <span class="qualification__line"></span>
+        </div>
+    </div>
+
+    <div class="qualification__data qualification__data--reverse">
+        <div class="qualification__rounder-line">
+            <span class="qualification__rounder"></span>
+        </div>
+        <div>
+            <h3 class="qualification__title">Primeiro "Olá, Mundo!"</h3>
+            <span class="qualification__subtitle">Descoberta da programação</span>
+            <div class="qualification__calendar">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11z"/></svg>
+                2023
+            </div>
+        </div>
+    </div>
+
+</div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ==================== LEARNING ==================== -->
+        <section class="learning section" id="learning">
+            <h2 class="section__title">Aprendizado Contínuo</h2>
+            <span class="section__subtitle">O que estou estudando agora</span>
+
+            <div class="learning__grid container">
+
+                <div class="learning__card">
+                    <div class="learning__icon">
+                        <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+                            <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/>
+                        </svg>
+                    </div>
+                    <h3 class="learning__title">JavaScript Avançado</h3>
+                    <p class="learning__desc">DOM, eventos, fetch API e fundamentos do ES6+</p>
+                    <div class="learning__progress">
+                        <div class="learning__bar" style="width: 35%"></div>
+                    </div>
+                </div>
+
+                <div class="learning__card">
+                    <div class="learning__icon">
+                        <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+                            <path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/>
+                        </svg>
+                    </div>
+                    <h3 class="learning__title">Python para Dados</h3>
+                    <p class="learning__desc">Listas, dicionários, manipulação de dados e Colorama</p>
+                    <div class="learning__progress">
+                        <div class="learning__bar" style="width: 50%"></div>
+                    </div>
+                </div>
+
+                <div class="learning__card">
+                    <div class="learning__icon">
+                        <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+                            <path d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
+                        </svg>
+                    </div>
+                    <h3 class="learning__title">Lógica de Programação</h3>
+                    <p class="learning__desc">Algoritmos, fluxogramas e resolução de problemas</p>
+                    <div class="learning__progress">
+                        <div class="learning__bar" style="width: 60%"></div>
+                    </div>
+                </div>
+
+                <div class="learning__card">
+                    <div class="learning__icon">
+                        <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+                            <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/>
+                        </svg>
+                    </div>
+                    <h3 class="learning__title">Algoritmos & Estruturas</h3>
+                    <p class="learning__desc">Busca, ordenação e estruturas de dados básicas</p>
+                    <div class="learning__progress">
+                        <div class="learning__bar" style="width: 25%"></div>
+                    </div>
+                </div>
+
+                <div class="learning__card">
+                    <div class="learning__icon">
+                        <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+                            <path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9c.83 0 1.5-.67 1.5-1.5 0-.39-.15-.74-.39-1.01-.23-.26-.38-.61-.38-.99 0-.83.67-1.5 1.5-1.5H16c2.76 0 5-2.24 5-5 0-4.42-4.03-8-9-8zm-5.5 9c-.83 0-1.5-.67-1.5-1.5S5.67 9 6.5 9 8 9.67 8 10.5 7.33 12 6.5 12zm3-4C8.67 8 8 7.33 8 6.5S8.67 5 9.5 5s1.5.67 1.5 1.5S10.33 8 9.5 8zm5 0c-.83 0-1.5-.67-1.5-1.5S13.67 5 14.5 5s1.5.67 1.5 1.5S15.33 8 14.5 8zm3 4c-.83 0-1.5-.67-1.5-1.5S16.67 9 17.5 9s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/>
+                        </svg>
+                    </div>
+                    <h3 class="learning__title">HTML & CSS Avançado</h3>
+                    <p class="learning__desc">Grid, Flexbox, animações e CSS moderno</p>
+                    <div class="learning__progress">
+                        <div class="learning__bar" style="width: 65%"></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="learning__quote container">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"/></svg>
+                <p>"Cada projeto é um novo aprendizado."</p>
+            </div>
+        </section>
+
+
+        <!-- ==================== OBJECTIVES ==================== -->
+        <section class="objectives section" id="objectives">
+            <h2 class="section__title">Objetivos Profissionais</h2>
+            <span class="section__subtitle">Para onde estou caminhando</span>
+
+            <div class="objectives__container container grid">
+
+                <div class="objectives__card">
+                    <div class="objectives__icon-wrap">
+                        <svg viewBox="0 0 24 24" width="36" height="36" fill="currentColor">
+                            <path d="M20 6h-2.18c.07-.44.18-.88.18-1.33C18 2.1 15.9 0 13.33 0c-1.33 0-2.6.52-3.54 1.46L8 3.21 6.21 1.46C5.27.52 4 0 2.67 0 1.1 0 0 1.1 0 2.67 0 3.12.11 3.56.18 4H2C.9 4 0 4.9 0 6v14c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="objectives__title">1ª Oportunidade em TI</h3>
+                    <p class="objectives__description">
+                        Conquistar meu primeiro estágio ou vaga júnior na área de desenvolvimento,
+                        aplicando os conhecimentos adquiridos na prática.
+                    </p>
+                    <span class="objectives__tag">Curto prazo</span>
+                </div>
+
+                <div class="objectives__card objectives__card--featured">
+                    <div class="objectives__icon-wrap">
+                        <svg viewBox="0 0 24 24" width="36" height="36" fill="currentColor">
+                            <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/>
+                        </svg>
+                    </div>
+                    <h3 class="objectives__title">Dominar Full Stack</h3>
+                    <p class="objectives__description">
+                        Tornar-me um desenvolvedor Full Stack dominando JavaScript, Python, bancos de
+                        dados e frameworks modernos.
+                    </p>
+                    <span class="objectives__tag">Médio prazo</span>
+                </div>
+
+                <div class="objectives__card">
+                    <div class="objectives__icon-wrap">
+                        <svg viewBox="0 0 24 24" width="36" height="36" fill="currentColor">
+                            <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/>
+                        </svg>
+                    </div>
+                    <h3 class="objectives__title">Contribuir em Equipe</h3>
+                    <p class="objectives__description">
+                        Trabalhar em projetos reais, colaborar com equipes multidisciplinares e
+                        resolver problemas concretos com código.
+                    </p>
+                    <span class="objectives__tag">Longo prazo</span>
+                </div>
+
+            </div>
+
+            <div class="objectives__mission container">
+                <p>"Comprometido com o aprendizado diário e a evolução constante como desenvolvedor."</p>
+            </div>
+        </section>
+
+
+        <!-- ==================== CONTACT ==================== -->
+        <section class="contact section" id="contact">
+            <h2 class="section__title">Contato</h2>
+            <span class="section__subtitle">Vamos conversar?</span>
+
+            <div class="contact__container container grid">
+
+                <!-- Contact Info Cards -->
+                <div class="contact__info">
+
+                    <div class="contact__card">
+                        <svg class="contact__card-icon" viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+                            <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                        </svg>
+                        <div>
+                            <h3 class="contact__card-title">Email</h3>
+                            <span class="contact__card-data">drianonascimento2000@gmail.com</span>
+                        </div>
+                        <a href="mailto:drianopinheiro2000@gmail.com" class="contact__card-btn" title="Enviar email">
+                            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+                        </a>
+                    </div>
+
+                    <div class="contact__card">
+                        <svg class="contact__card-icon" viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+                            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                        </svg>
+                        <div>
+                            <h3 class="contact__card-title">Localização</h3>
+                            <span class="contact__card-data">Mauá – SP, Brasil</span>
+                        </div>
+                    </div>
+
+                    <div class="contact__card">
+                        <svg class="contact__card-icon" viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+                            <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+                        </svg>
+                        <div>
+                            <h3 class="contact__card-title">GitHub</h3>
+                            <span class="contact__card-data">drianopinheiro</span>
+                        </div>
+                        <a href="https://github.com/drianopinheiro" target="_blank" rel="noopener noreferrer" class="contact__card-btn" title="Visitar GitHub">
+                            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+                        </a>
+                    </div>
+
+                    <div class="contact__card">
+                        <svg class="contact__card-icon" viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+                            <path d="M19 0H5a5 5 0 00-5 5v14a5 5 0 005 5h14a5 5 0 005-5V5a5 5 0 00-5-5zM8 19H5V8h3v11zM6.5 6.73a1.77 1.77 0 110-3.54 1.77 1.77 0 010 3.54zM20 19h-3v-5.6c0-3.37-4-3.11-4 0V19h-3V8h3v1.77C14.4 7.47 20 7.3 20 12.68V19z"/>
+                        </svg>
+                        <div>
+                            <h3 class="contact__card-title">LinkedIn</h3>
+                            <span class="contact__card-data">adrianopinheiro</span>
+                        </div>
+                        <a href="https://www.linkedin.com/in/adriano-pinheiro-726251442" target="_blank" rel="noopener noreferrer" class="contact__card-btn" title="Visitar LinkedIn">
+                            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+                        </a>
+                    </div>
+
+                </div>
+
+                <!-- Contact Form -->
+                <form action="https://formsubmit.co/drianopinheiro01@gmail.com" method="POST" class="contact__form">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_subject" value="Contato via Portfólio">
+
+                    <!-- Redireciona para página de confirmação -->
+                    <input type="hidden" name="_next"  value="https://drianopinheiro.github.io/Portfolio/contact.html">
+
+                    <div class="contact__form-group">
+                        <label class="contact__form-label" for="contact-name">Nome</label>
+                        <div class="contact__form-div">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/></svg>
+                            <input type="text" id="contact-name" name="name" placeholder="Seu nome completo" class="contact__form-input" required>
+                        </div>
+                    </div>
+
+                    <div class="contact__form-group">
+                        <label class="contact__form-label" for="contact-email">Email</label>
+                        <div class="contact__form-div">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                            <input type="email" id="contact-email" name="email" placeholder="seu@email.com" class="contact__form-input" required>
+                        </div>
+                    </div>
+
+                    <div class="contact__form-group">
+                        <label class="contact__form-label" for="contact-project">Assunto</label>
+                        <div class="contact__form-div">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/></svg>
+                            <input type="text" id="contact-project" name="project" placeholder="Estágio / Parceria / Dúvida..." class="contact__form-input" required>
+                        </div>
+                    </div>
+
+                    <div class="contact__form-group">
+                        <label class="contact__form-label" for="contact-message">Mensagem</label>
+                        <div class="contact__form-div contact__form-div--textarea">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M4 4h16v2H4zm0 4h16v2H4zm0 4h10v2H4z"/></svg>
+                            <textarea id="contact-message" name="message" placeholder="Sua mensagem aqui..." class="contact__form-input contact__form-textarea" rows="6" required></textarea>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="button button--gradient contact__form-btn">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+                        Enviar Mensagem
+                    </button>
+                </form>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__top">
+                <div class="footer__brand">
+                    <a href="#home" class="footer__logo">
+                        <span class="nav__logo-ap">AP</span>
+                        Adriano Pinheiro
+                    </a>
+                    <p class="footer__subtitle">Estudante de Desenvolvimento de Sistemas — ETEC</p>
+                </div>
+
+                <div class="footer__links">
+                    <h4 class="footer__links-title">Navegação</h4>
+                    <ul class="footer__links-list">
+                        <li><a href="#portfolio" class="footer__link">Projetos</a></li>
+                        <li><a href="#about" class="footer__link">Sobre</a></li>
+                        <li><a href="#qualification" class="footer__link">Formação</a></li>
+                        <li><a href="#contact" class="footer__link">Contato</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__social-wrap">
+                    <h4 class="footer__links-title">Social</h4>
+                    <div class="footer__socials">
+                        <a href="https://www.linkedin.com/in/adriano-pinheiro-726251442" target="_blank" rel="noopener noreferrer" class="footer__social" title="LinkedIn">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                <path d="M19 0H5a5 5 0 00-5 5v14a5 5 0 005 5h14a5 5 0 005-5V5a5 5 0 00-5-5zM8 19H5V8h3v11zM6.5 6.73a1.77 1.77 0 110-3.54 1.77 1.77 0 010 3.54zM20 19h-3v-5.6c0-3.37-4-3.11-4 0V19h-3V8h3v1.77C14.4 7.47 20 7.3 20 12.68V19z"/>
+                            </svg>
+                        </a>
+                        <a href="https://github.com/drianopinheiro" target="_blank" rel="noopener noreferrer" class="footer__social" title="GitHub">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/driano.py?exln=MXc3Nm9nd3FiZXE0Mw==" target="_blank" rel="noopener noreferrer" class="footer__social" title="Instagram">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p class="footer__copy">© 2026 Adriano Pinheiro dos Santos. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- ==================== SCROLL UP ==================== -->
+    <a href="#home" class="scrollup" id="scroll-up" title="Voltar ao topo">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+            <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/>
+        </svg>
+    </a>
+
+
+    <!-- ==================== SCRIPTS ==================== -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
